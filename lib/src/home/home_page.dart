@@ -1,8 +1,5 @@
-import 'dart:io';
-
 import 'package:consulta_cep/core/ui/widgets/navbar.dart';
 import 'package:flutter/material.dart';
-import 'package:flutter/widgets.dart';
 
 import '../search_address/view/search_address_page.dart';
 

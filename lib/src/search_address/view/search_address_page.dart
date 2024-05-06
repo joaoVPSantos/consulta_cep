@@ -1,14 +1,10 @@
-import 'dart:io';
-
 import 'package:auto_size_text/auto_size_text.dart';
 import 'package:consulta_cep/core/data/models/address_model.dart';
 import 'package:consulta_cep/core/data/repositories/address/address_repository_impl.dart';
 import 'package:consulta_cep/core/ui/utils/theme_config.dart';
 import 'package:consulta_cep/core/ui/widgets/appbar_custom.dart';
 import 'package:consulta_cep/src/search_address/cubit/search_address_cubit.dart';
-import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
-import 'package:flutter/widgets.dart';
 import 'package:flutter_bloc/flutter_bloc.dart';
 import '../../../core/ui/widgets/button_custom.dart';
 import '../../../core/ui/widgets/input_custom.dart';
