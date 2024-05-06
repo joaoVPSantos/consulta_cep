@@ -1,5 +1,8 @@
+import 'dart:io';
+
 import 'package:consulta_cep/core/ui/widgets/navbar.dart';
 import 'package:flutter/material.dart';
+import 'package:flutter/widgets.dart';
 
 import '../search_address/view/search_address_page.dart';
 
@@ -8,16 +11,21 @@ class HomePage extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    return const Scaffold(
-      body: Row(
-        children: [
-          Row(
-            children: [
-              Navbar(),
-            ],
-          ),
-          Expanded(child: SearchAddressPage()),
-        ],
+    final screenWidth = MediaQuery.of(context).size.width;
+    return SafeArea(
+      child: Scaffold(
+        body: Row(
+          children: [
+            screenWidth < 600
+                ? Container()
+                : const Row(
+                    children: [
+                      Navbar(),
+                    ],
+                  ),
+            const Expanded(child: SearchAddressPage()),
+          ],
+        ),
       ),
     );
   }

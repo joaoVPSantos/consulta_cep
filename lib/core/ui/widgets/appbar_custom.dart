@@ -13,7 +13,7 @@ class AppbarCustom extends StatelessWidget {
       shadowColor: ThemeConfig.corCinza,
       child: Container(
         padding: EdgeInsets.symmetric(
-            vertical: screenheight * .02, horizontal: screenWidth * 0.02),
+            vertical: screenheight * .00, horizontal: screenWidth * 0.02),
         alignment: Alignment.topCenter,
         child: Row(
           mainAxisAlignment: MainAxisAlignment.spaceBetween,
