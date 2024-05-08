@@ -1,2 +1,2 @@
 # consulta_cep
-Avaliação candidatura 7pay
+App para consulta de cep, responsivo para web e mobile
